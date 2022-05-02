@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: midnightblue;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightgreen;
+
+}
+
+.banner {
+    font-size: 68px;
+    background-color: azure;
+}
+
+header {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    background-color: brown;
+    box-shadow: 0 5px 5px 0;
+
+
+
+}
