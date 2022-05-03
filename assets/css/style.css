@@ -1,25 +1,24 @@
 * {
     box-sizing: border-box;
 }
-
+/*Root colors for theme*/
 :root {
-    
+    --Main: #d48218b4;
+    --Green: #445c1b;
+    --Text: #ffffff;
 }
-
-body {
-    margin: 0;
-    padding: 0;
-    color: midnightblue;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: lightgreen;
-
+/*Top Image */
+.holder_1 img {
+    max-width: 30%;
+    max-height: 30%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border: 2px var(--Text)  
 }
-
-.banner {
-    font-size: 68px;
-    background-color: azure;
-}
-
+/*Header and navigatioal*/
 header {
     padding: 0;
     display: flex;
@@ -27,9 +26,115 @@ header {
     align-items: center;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    background-color: brown;
+    background-color: var(--Main);
     box-shadow: 0 5px 5px 0;
+}
 
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
+nav a {
+    padding: 10px;
+    color: var(--Text);
+    font-size: 12px;
+}
 
+nav a:hover  {
+    color: var(--Green);
+    background-size: 110% 110% ;
+}
+/*Body CSS adjustments*/
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--Text);
+    font-family: Helvetica, sans-serif;
+    background-color: var(--Green);
+}
+
+.banner {
+    font-size: 68px;
+    background-color: var(--Green);
+    margin: 7%;
+    text-align: center;
+    text-shadow: 2px 2px 2px black ;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 42px;
+}
+
+#aboutme {
+    text-align: center;
+}
+
+.flex-container {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--Main);
+    box-shadow: 0 5px 5px 0;
+}
+
+#work img {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--Main);
+    box-shadow: 0 5px 5px 0;
+    max-width: 30%;
+    max-height: 30%;
+    object-fit: cover;
+    display: block;
+    margin: 5%;
+    border: 2px white;
+    box-sizing: content-box;
+}
+
+flex-container img :hover {
+    transform: scale(115%);
+}
+
+h3, span {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: var(--Main);
+    max-width: 30%;
+    max-height: 30%;
+    object-fit: cover;
+    display: block;
+    margin: 5%; 
+    border: #445c1b;
+    border-width: 3px;
+    border-style: double;
+    text-align: center
+}
+
+#grow:hover {
+    transform: scale(1.05);
+}
+
+address a {
+    padding: 10px;
+    color: var(--Text);
+    font-size: 12px;  
+}
+
+address a:hover {
+    color: var(--Main);
+    background-size: 110% 110% ;
 }
